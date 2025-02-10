@@ -11,7 +11,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 public class VerificarPrecioTotal implements Task {
 
     private static final Target TOTAL_PRICE = Target.the("Precio total del carrito")
-            .located(By.cssSelector("//*[@id='page-34']/div/div[1]/form/table/tbody/tr[1]/td[6]"));
+            .located(By.cssSelector("//tr[@class='order-total']//td[@data-title='Total']//strong//span[@class='woocommerce-Price-amount']"));
 
     private final double expectedPrice;
 
